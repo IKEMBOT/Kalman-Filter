@@ -26,7 +26,14 @@ After applying the Kalman filter to the noisy tracking points, the result is a s
 - **Kalman Filter**: Used to smooth the data and estimate the true path.
 - **Output**: A continuous and accurate trajectory.
 
-## Applications:
-- Robotics
-- Computer Vision
-- Autonomous Vehicles
+## Applications
+
+This project can be applied in several fields to help with navigation and position tracking, including:
+
+- **Robotics**: Enabling robots to track their movements and navigate accurately.
+- **Computer Vision**: Assisting in object detection and tracking within images or video streams.
+- **Autonomous Vehicles**: Helping self-driving cars estimate their position and navigate their environment.
+
+At an advanced level, autonomous vehicles use **SLAM (Simultaneous Localization and Mapping)** combined with real-time camera systems (e.g., Intel RealSense) to map their surroundings while simultaneously determining their position. This approach allows for more accurate navigation in dynamic environments. Our project for autonomous vehicles uses a similar method but leverages the RealSense camera, making it much easier to implement. 
+
+Check out this video for an example of how SLAM is utilized with real-time camera systems in our autonomous vehicle project: [SLAM with RealSense](https://www.youtube.com/watch?v=a1Efa5Dty1Y).
