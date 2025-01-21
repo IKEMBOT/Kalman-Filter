@@ -2,9 +2,9 @@
 
 This project is designed to help understand how the Kalman filter works in a simple scenario. It demonstrates how to estimate and smooth the path of a moving object based on noisy tracking points (dots). The input consists of a series of dots representing the object's position at different times. By applying the Kalman filter, we predict the object's next position based on previous data, then correct it with new measurements as they arrive. The result is a smoothed, continuous path that accurately reflects the object's trajectory, even when the input data is noisy or imprecise.
 
-## Circuit Diagram
+## Circuit Race
 
-Here is the circuit diagram used in the project:
+Here is the circuit Race used in the project:
 
 ![Circuit Diagram](circuit.jpg)
 
