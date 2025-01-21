@@ -1,6 +1,6 @@
 # Path Estimation with Kalman Filter
 
-This project is designed to help understand how the Kalman filter works in a simple scenario. It demonstrates how to estimate and smooth the path of a moving object based on noisy tracking points (dots). By applying the Kalman filter, we can predict and correct the object's trajectory over time, resulting in a more reliable path, even when the input data is imperfect or noisy.
+This project is designed to help understand how the Kalman filter works in a simple scenario. It demonstrates how to estimate and smooth the path of a moving object based on noisy tracking points (dots). The input consists of a series of dots representing the object's position at different times. By applying the Kalman filter, we predict the object's next position based on previous data, then correct it with new measurements as they arrive. The result is a smoothed, continuous path that accurately reflects the object's trajectory, even when the input data is noisy or imprecise.
 
 ## Circuit Diagram
 
@@ -26,14 +26,7 @@ After applying the Kalman filter to the noisy tracking points, the result is a s
 - **Kalman Filter**: Used to smooth the data and estimate the true path.
 - **Output**: A continuous and accurate trajectory.
 
-## How It Works:
-
-1. **Input Data**: A set of dots representing the object's positions at different times.
-2. **Kalman Filter**: Predicts the next position based on previous data, then corrects it when new measurements are received.
-3. **Path Output**: The Kalman filter generates a smoothed, continuous path that accurately reflects the object's movement.
-
 ## Applications:
-
 - Robotics
 - Computer Vision
 - Autonomous Vehicles
