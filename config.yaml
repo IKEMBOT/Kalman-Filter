@@ -1,0 +1,46 @@
+# Common parameters for KF and EKF
+common:
+  image_path: "circuit.jpg"  # Path to the circuit image
+  dt: "0.1"
+
+  Q:
+    kf:  # KF process noise covariance (2x2)
+      - [0.001, 0]
+      - [0, 0.001]
+    ekf:  # EKF process noise covariance (3x3)
+      - [0.001, 0, 0]
+      - [0, 0.001, 0]
+      - [0, 0, 0.001]
+
+  R:
+    kf:  # KF measurement noise covariance (1x1)
+      - [0.001]
+    ekf:  # EKF measurement noise covariance (2x2)
+      - [0.001, 0]
+      - [0, 0.001]
+
+  P_initial:
+    kf:  # KF initial state covariance (2x2)
+      - [1, 0]
+      - [0, 1]
+    ekf:  # EKF initial state covariance (3x3)
+      - [1, 0, 0]
+      - [0, 1, 0]
+      - [0, 0, 1]
+
+kf:
+  A:  # State transition matrix (2x2)
+    - [1, 0.1] # [1, dt] delta time is 0.1
+    - [0,   1] # [0, 1 ]
+  H:  # Measurement matrix (1x2)
+    - [1, 0]
+
+ekf:
+  H:  # Measurement matrix (2x3)
+    - [1, 0, 0]
+    - [0, 1, 0]
+
+# Visualization settings
+visualization:
+  thick_dot: 10  # Thickness for the dots
+  thick_est: 3  # Thickness for the estimated path (green line)
