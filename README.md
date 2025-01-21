@@ -1,24 +1,24 @@
 # Path Estimation with Kalman Filter
 
-This project demonstrates how to estimate and smooth the path of a moving object using noisy tracking points (dots). By applying the **Kalman filter**, we can predict and refine the object's trajectory, providing a more accurate path even when the input data is noisy or imprecise.
+This project is designed to help understand how the Kalman filter works in a simple scenario. It demonstrates how to estimate and smooth the path of a moving object based on noisy tracking points (dots). By applying the Kalman filter, we can predict and correct the object's trajectory over time, resulting in a more reliable path, even when the input data is imperfect or noisy.
 
 ## Circuit Diagram
 
 Here is the circuit diagram used in the project:
 
-![Circuit Diagram](circuit.png)
+![Circuit Diagram](circuit.jpg)
 
 ## Input Data: Noisy Tracking Points
 
 The input consists of noisy tracking points (dots) representing the object's position over time. These points may appear imprecise or erratic:
 
-![Noisy Tracking Points](input_points.png)
+![Noisy Tracking Points](result/circuit_initilize_posistion.png)
 
 ## Path Estimation Result
 
 After applying the Kalman filter to the noisy tracking points, the result is a smooth and accurate estimated path:
 
-![Kalman Filter Path Estimation](estimated_path.png)
+![Kalman Filter Path Estimation](result/KF_Estimation.png)
 
 ## Features:
 
