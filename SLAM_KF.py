@@ -41,7 +41,7 @@ thick_dot = int(config["visualization"]["thick_dot"])  # Thickness for dots
 thick_est = int(config["visualization"]["thick_est"])  # Thickness for the estimated path
 
 circuit_img = cv2.imread(image_path)
-circuit_img = cv2.cvtColor(circuit_img, cv2.COLOR_BGR2RGB)
+# circuit_img = cv2.cvtColor(circuit_img, cv2.COLOR_BGR2RGB)
 original_img = circuit_img.copy()  # Keep a copy of the original image
 
 points = []
